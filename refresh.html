@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REFRESH YOURSELF</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: 200px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            font-size: 5em;
+            position: absolute;
+            animation: breathe 16s infinite;
+            visibility: hidden;
+        }
+        .breathe-in {
+            animation-delay: 0s;
+        }
+        .breathe-out {
+            animation-delay: 8s;
+        }
+        @keyframes breathe {
+            0%, 40%, 100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+            5%, 35% {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="breathe-in">Breathe In</h1>
+    <h1 class="breathe-out">Breathe Out</h1>
+</body>
+</html>
